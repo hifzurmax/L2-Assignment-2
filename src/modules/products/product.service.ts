@@ -6,12 +6,24 @@ const createProductIntoDB = async (payLoad: TProduct) => {
   return result;
 };
 
+const getProductByIdFromDB = async (id: string) => {
+  const result = await Product.findById(id);
+  return result;
+};
+
 const getAllProductsFromDB = async () => {
   const result = await Product.find();
+  return result;
+};
+
+const updateProductInDB = async (id: string, payLoad: Partial<TProduct>) => {
+  const result = await Product.findByIdAndUpdate(id, payLoad, { new: true });
   return result;
 };
 
 export const ProductServices = {
   createProductIntoDB,
   getAllProductsFromDB,
+  getProductByIdFromDB,
+  updateProductInDB,
 };
