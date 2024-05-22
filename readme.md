@@ -26,15 +26,35 @@ This is a simple Order Management System built with Node.js, Express, and MongoD
 
 Before you begin, ensure you have the following installed on your local machine:
 
-- [Node.js](https://nodejs.org/) (v14.x or later)
-- [npm](https://www.npmjs.com/) (v6.x or later)
-- [MongoDB](https://www.mongodb.com/) (local instance or cloud-based)
+- [Node.js](https://nodejs.org/) (v22.2.0 or later)
+- [npm](https://www.npmjs.com/) (10.7.0 or later)
+- [MongoDB](https://www.mongodb.com/) (cloud-based)
 
 ## Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/order-management-system.git
-cd order-management-system
+https://github.com/your-username/order-management-system.git
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a .env file in the root directory and add the following environment variables:
+
+```bash
+PORT=5000
+MONGODB_URI=mongodb+srv://hifzur:44398787@cluster0.sz5ysgx.mongodb.net/assignment-2?retryWrites=true&w=majority&appName=Cluster0
+```
+
+### 4. Run the application
+
+```bash
+npm run start:dev
 ```
