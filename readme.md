@@ -35,7 +35,7 @@ Before you begin, ensure you have the following installed on your local machine:
 ### 1. Clone the Repository
 
 ```bash
-https://github.com/your-username/order-management-system.git
+https://github.com/hifzurmax/L2-Assignment-2.git
 ```
 
 ### 2. Install Dependencies
